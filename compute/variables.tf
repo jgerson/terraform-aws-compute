@@ -21,3 +21,13 @@ variable "instance_type" {
 
 variable "key_name" {
 }
+
+data "terraform_remote_state" "vpc" {
+  backend = "remote"
+  config = {
+    organization = "TonyPulickal"
+    workspaces = {
+      name = "demo-aws-vpc"
+    }
+  }
+}
