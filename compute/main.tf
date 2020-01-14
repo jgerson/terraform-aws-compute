@@ -1,5 +1,5 @@
 module "security-group" {
-  source  = "app.terraform.io/TonyPulickal/security-group/aws"
+  source  = "app.terraform.io/jgersonorg1/security-group/aws"
   version = "3.1.0"
   name    = "${var.prefix}-sg-demo"
   vpc_id  = data.terraform_remote_state.vpc.outputs.vpc_id 
@@ -8,7 +8,7 @@ module "security-group" {
 }
 
 module "ec2_instance" {
-  source  = "app.terraform.io/TonyPulickal/ec2-instance/aws"
+  source  = "app.terraform.io/jgersonorg1/ec2-instance/aws"
   version = "2.6.0"
 
   ami                    = var.ami_id
