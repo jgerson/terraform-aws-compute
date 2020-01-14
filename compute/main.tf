@@ -2,7 +2,7 @@ data "terraform_remote_state" "vpc" {
   backend = "remote"
 
   config = {
-    organization = "jgersonorg1"
+   # organization = "jgersonorg1"
 
     workspaces = {
       name = "terraform-aws-compute"
