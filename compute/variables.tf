@@ -9,7 +9,7 @@ variable "ttl" {
 }
 
 variable "ami_id" {
-  default = "ami-02b623ddeb82e23a0"
+  default = "ami-0f3f3743e0ea68efd"
 }
 
 variable "instance_type" {
