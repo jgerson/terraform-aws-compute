@@ -26,7 +26,7 @@ module "ec2_instance" {
   ami                    = var.ami_id
   instance_type          = var.instance_type
   key_name               = var.key_name 
-  name                   = "${var.prefix}-ec2-demo" 
+  name                   = "${var.prefix}-ec2-demo-jg" 
   vpc_security_group_ids = [ module.security-group.this_security_group_id ]
   subnet_id = data.terraform_remote_state.vpc.outputs.primary_subnet
 
