@@ -2,7 +2,7 @@ module "vpc" {
   source  = "app.terraform.io/jgersonorg1/vpc/aws"
   version = "2.9.0"
 
-  name = "${var.prefix}-vpc-demo-jg"
+  name = "${var.prefix}-vpc-demo"
   cidr = "10.0.0.0/16"
 
   azs             = ["us-east-1b", "us-east-1c"]
