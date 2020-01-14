@@ -5,7 +5,7 @@ data "terraform_remote_state" "vpc" {
     organization = "jgersonorg1"
 
     workspaces = {
-      name = "terraform-aws-compute"
+      name = "terraform-aws-compute-network"
     }
   }
 }
