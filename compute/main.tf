@@ -1,3 +1,15 @@
+data "terraform_remote_state" "vpc" {
+  backend = "remote"
+
+  config = {
+    organization = "jgersonorg1"
+
+    workspaces = {
+      name = "demo-aws-vpc"
+    }
+  }
+}
+
 module "security-group" {
   source  = "app.terraform.io/jgersonorg1/security-group/aws"
   version = "3.1.0"

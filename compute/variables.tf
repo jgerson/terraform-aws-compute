@@ -1,11 +1,8 @@
-variable "prefix" {
-}
+variable "prefix" {}
 
-variable "env" {
-}
+variable "env" {}
 
-variable "owner" {
-}
+variable "owner" {}
 
 variable "ttl" {
   default = 72
@@ -19,15 +16,4 @@ variable "instance_type" {
   default = "t2.nano"
 }
 
-variable "key_name" {
-}
-
-data "terraform_remote_state" "vpc" {
-  backend = "remote"
-  config = {
-    organization = "TonyPulickal"
-    workspaces = {
-      name = "demo-aws-vpc"
-    }
-  }
-}
+variable "key_name" {}
