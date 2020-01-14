@@ -1,5 +1,5 @@
 module "vpc" {
-  source  = "app.terraform.io/TonyPulickal/vpc/aws"
+  source  = "app.terraform.io/jgersonorg1/vpc/aws"
   version = "2.9.0"
 
   name = "${var.prefix}-vpc-demo"
