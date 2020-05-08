@@ -16,6 +16,7 @@ module "vpc" {
     Terraform = "true"
     Environment = var.env 
     owner = var.owner
+    test = "true"
   }
 }
 
